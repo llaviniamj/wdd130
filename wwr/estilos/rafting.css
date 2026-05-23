@@ -1,6 +1,6 @@
 :root {
-    --cor-primaria: #0b3d91;
-    --cor-secundaria: #1e81b0;
+    --cor-primaria: #0b3d91;    
+    --cor-secundaria: #1e81b0;   
     --cor-destaque1: #f4f4f4;
     --cor-destaque2: #ffd166;
 
@@ -27,31 +27,30 @@ footer {
 }
 
 header {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    align-items: center;
-
-    background-color: var(--cor-primaria);
-
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: transparent;
+    padding: 1rem 0;
 }
 
 header img {
     width: 150px;
     height: auto;
+    margin-bottom: 10px;
 }
 
-nav {
+header nav {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px;
+header nav a {
+    color: #0066cc; 
+    text-decoration: underline;
+    font-weight: normal;
+    padding: 4px 0;
 }
 
 h1,
@@ -81,37 +80,28 @@ article {
 
 .hero h1 {
     position: absolute;
-
     top: 20px;
-
     width: 100%;
-
     text-align: center;
-
     color: white;
-
-    background-color: rgba(0, 0, 0, 0.5);
-
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 1rem;
+    margin: 0;
 }
 
 .hero article {
     position: absolute;
-
     bottom: 20px;
     left: 20px;
     right: 20px;
-
     background-color: rgba(255, 255, 255, 0.85);
-
     padding: 1rem;
+    margin: 0;
 }
 
 .hero article img {
     float: right;
-
     width: 125px;
-
     margin-left: 15px;
 }
 
@@ -121,16 +111,23 @@ section {
 
 footer {
     display: flex;
-
-    justify-content: space-between;
-
+    flex-direction: column; 
     align-items: center;
-
+    background-color: var(--cor-primaria);
+    color: white;
     margin-top: 20px;
+    padding: 2rem 1rem;
+}
 
-    border-top: 1px solid #ccc;
+footer p {
+    margin-bottom: 20px;
+}
 
-    padding: 1rem;
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 .redes-sociais a {
@@ -138,6 +135,6 @@ footer {
 }
 
 .redes-sociais img {
-    width: 35px;
+    width: 160px;
     height: auto;
 }
