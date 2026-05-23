@@ -26,7 +26,6 @@ footer {
     margin: 0 auto;
 }
 
-
 header {
     display: flex;
     flex-direction: column;
@@ -54,10 +53,16 @@ header nav a {
     padding: 4px 0;
 }
 
-h1,
-h2 {
+h1 {
     font-family: var(--fonte-titulo);
     color: var(--cor-primaria);
+    text-align: center;
+    margin: 1rem;
+}
+
+h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-secundaria);
     text-align: center;
     margin: 1rem;
 }
@@ -96,7 +101,7 @@ article {
     left: 20px;
     right: 20px;
     background-color: var(--cor-destaque1); 
-    border: 1px solid var(--cor-destaque2); 
+    border: 1px solid var(--cor-destaque2);  
     padding: 1rem;
     margin: 0;
 }
