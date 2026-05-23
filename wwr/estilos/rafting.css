@@ -145,3 +145,9 @@ footer p {
     width: 160px;
     height: auto;
 }
+
+.socialmedia img {
+    fill: #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+}
