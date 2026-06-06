@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Web: HTML & CSS Quiz</title>
+    <link rel="stylesheet" href="estilos/questionario.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Desafio Web</h1>
+        <p>Combine seus conhecimentos de estrutura e estilo neste rápido questionário.</p>
+    </header>
+
+    <main>
+        <form action="#" method="POST">
+
+            <div class="campo-grupo">
+                <label for="q1">1. Qual tag HTML é utilizada para estruturar o título principal de uma página?</label>
+                <input type="text" id="q1" name="q1" placeholder="Ex: <h1>" required>
+            </div>
+
+            <div class="campo-grupo">
+                <label for="q2">2. Em suas palavras, explique qual é a principal diferença entre os seletores de ID e de
+                    Classe no CSS.</label>
+                <textarea id="q2" name="q2" rows="4" placeholder="Escreva sua resposta aqui..." required></textarea>
+            </div>
+
+            <div class="campo-grupo">
+                <label for="q3">3. Qual propriedade CSS é utilizada para alterar a cor de fundo de um elemento?</label>
+                <div class="select-wrapper">
+                    <select id="q3" name="q3" required>
+                        <option value="" selected disabled>Escolha a propriedade correta...</option>
+                        <option value="opcaoA">color</option>
+                        <option value="opcaoB">background-color</option>
+                        <option value="opcaoC">border-color</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="campo-grupo">
+                <label for="q4">4. Analise o código abaixo. Qual é o valor da margem INFERIOR (bottom)
+                    resultante?</label>
+                <pre class="codigo-bloco"><code>margin: 10px 20px 30px 40px;</code></pre>
+                <input type="number" id="q4" name="q4" placeholder="Digite apenas o número em pixels (ex: 15)" required>
+            </div>
+
+            <button type="submit" class="btn-enviar">
+                <span>Enviar Respostas</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+
+        </form>
+    </main>
+
+</body>
+
+</html>
