@@ -357,3 +357,16 @@ footer p {
     font-weight: bold;
     color: var(--cor-texto-escuro);
 }
+
+@media (max-width: 860px) {
+    header, main, footer {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .conteudo-central, .equipe-grid, .historia-grid {
+        flex-direction: column;
+        display: flex;
+        gap: 20px;
+    }
+}
