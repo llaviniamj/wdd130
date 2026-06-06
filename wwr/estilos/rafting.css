@@ -189,18 +189,18 @@ footer p {
     margin: 0;
 }
 
-.socialmedia {
+.redes-sociais {
     display: flex;
     flex-direction: row; 
     gap: 15px;
     align-items: center;
 }
 
-.socialmedia a {
+.redes-sociais a {
     display: block;
 }
 
-.socialmedia img {
+.redes-sociais img {
     width: 32px; 
     height: auto;
     filter: brightness(0) invert(1); 
